@@ -1,0 +1,71 @@
+.nav-nav {
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #237aff;
+  color: #fff;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.nav-nav::after {
+  content: "";
+  background-image: url(../../assets/image/wave_up_theme.svg);
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  z-index: -10;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  bottom: -28px;
+}
+
+.logo {
+  position: absolute;
+  width: 150px;
+  margin-top: -50px;
+}
+
+.btn-btn {
+  padding: 9px;
+  margin-top: 20px;
+  font-size: large;
+  margin-right: 1rem;
+  position: relative;
+  min-width: 80px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  text-transform: capitalize;
+}
+
+.btn-btn::before {
+  content: "";
+  height: 90%;
+  width: 0%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+}
+
+.btn-btn:hover::before {
+  width: 100%;
+  background: #fff;
+}
+.btn-btn:hover {
+  color: #237aff;
+}
+
+.bg-sm-color {
+  background: linear-gradient(45deg, #237aff, rgb(61, 200, 255));
+}

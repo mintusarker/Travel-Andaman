@@ -1,0 +1,53 @@
+table {
+}
+
+table tr:nth-child(odd) {
+  background: linear-gradient(45deg, rgb(185, 222, 255), rgb(216, 244, 255));
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: red;
+}
+
+table tr td:first-child {
+  border-radius: 9px 0 0 9px;
+}
+
+table tr td {
+  padding: 9px 1rem;
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
+  margin: 5px;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  white-space-collapse: collapse;
+  text-wrap: wrap;
+  font-weight: normal;
+  font-size: large;
+  font-family: sans-serif;
+  font-style: normal;
+  text-align: start;
+  border-spacing: 2px;
+  border-color: gray;
+  font-variant: normal;
+  box-shadow: 9px 9px 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 9px;
+  overflow: hidden;
+  padding: 5px;
+  width: 100%;
+}
+
+
+.icon{
+    font-size: larger;
+}

@@ -1,0 +1,86 @@
+.inner {
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 80px;
+}
+
+.cardbox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.cardbox .card {
+  flex: 1 1 300px;
+  max-width: 350px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.2s;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+
+.cardbox .card img {
+    width: 100%;
+    min-height: 100%;
+    max-height: 150%;
+    transition: .3s;
+}
+
+.cardbox .card .cardbody {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardbox .card .cardimg {
+  width: 100%;
+  height: 280px;
+  display: grid;
+  place-items: center;
+}
+
+.cardbox .card .cardbody .ttl {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  display: block;
+  min-width: 90%;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 1px;
+}
+
+.cardbox .card:hover .cardbody .detail {
+    top: 0;
+}
+
+.cardbox .card .cardbody .detail {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+  top: 100%;
+  overflow: hidden;
+  transition: 0.3s;
+  display: grid;
+  place-items: center;
+}
