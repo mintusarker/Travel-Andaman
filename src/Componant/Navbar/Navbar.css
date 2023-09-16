@@ -66,6 +66,12 @@
   color: #237aff;
 }
 
-.bg-sm-color {
+/* .bg-link-color {
   background: linear-gradient(45deg, #237aff, rgb(61, 200, 255));
+} */
+
+@media only screen and (max-width: 768px) {
+  .bg-link-color {
+    background: linear-gradient(45deg, #237aff, rgb(61, 200, 255));
+  }
 }

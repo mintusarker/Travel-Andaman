@@ -5,7 +5,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <div name='home' id="up" className="landingpage">
+    <div name="home" id="up" className="landingpage">
       <video src={video} autoPlay muted loop class="video-bg" />
       <div className="bg-overlay"></div>
 
@@ -28,7 +28,6 @@ const Header = () => {
           </a>
         </div>
       </div>
-
     </div>
   );
 };

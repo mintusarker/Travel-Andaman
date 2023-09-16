@@ -6,7 +6,7 @@ import { MdWhatsapp, MdOutlineMail, MdLocationOn } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <section name='contact' id="contact">
+    <section name="contact" id="contact">
       <div className="inner">
         <div className="">
           <p className="title">Contact</p>
@@ -87,7 +87,10 @@ const Contact = () => {
                   <label className="block text-base uppercase mb-3" for="">
                     Number Of Days
                   </label>
-                  <select className="border border-black focus:outline-none focus:border-sky-500 p-3 w-full" name="NOD">
+                  <select
+                    className="border border-black focus:outline-none focus:border-sky-500 p-3 w-full"
+                    name="NOD"
+                  >
                     <option value="No Decided">No Decided</option>
                     <option value="03 Night - 04 Days">
                       03 Night - 04 Days
@@ -131,7 +134,7 @@ const Contact = () => {
 
         <div className="flex flex-wrap gap-20 my-28 mx-auto justify-center items-center px-12 sm:px-32 md:px-32">
           <div className="px-3">
-            <table >
+            <table>
               <tbody>
                 <tr>
                   <td>
@@ -141,13 +144,13 @@ const Contact = () => {
                 </tr>
                 <tr>
                   <td>
-                    <MdWhatsapp className="icon"  />
+                    <MdWhatsapp className="icon" />
                   </td>
                   <td>9476063111</td>
                 </tr>
                 <tr>
                   <td>
-                    <MdOutlineMail className="icon"  />
+                    <MdOutlineMail className="icon" />
                   </td>
                   <td
                     style={{
@@ -161,7 +164,7 @@ const Contact = () => {
                 </tr>
                 <tr>
                   <td>
-                    <MdLocationOn className="icon"  />
+                    <MdLocationOn className="icon" />
                   </td>
                   <td>
                     Andamanic Travelopedia <br />
@@ -182,7 +185,10 @@ const Contact = () => {
               width="550"
               height="350"
               className="rounded-md p-1 shadow-xl shadow-gray-400 map-responsive"
-              style={{ border: "0" , boxShadow: "9px 9px 1rem rgba(0, 0, 0, 0.3)"}}
+              style={{
+                border: "0",
+                boxShadow: "9px 9px 1rem rgba(0, 0, 0, 0.3)",
+              }}
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"

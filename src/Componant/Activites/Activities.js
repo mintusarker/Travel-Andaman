@@ -11,7 +11,7 @@ import "./Activities.css";
 
 const Activities = () => {
   return (
-    <div name='Activities' className="inner-two">
+    <div name="Activities" className="inner-two">
       <h2 className="title-activity">Activities In Andaman</h2>
       <p className="des-activity">Top Activities To Do In Andaman</p>
       <div>

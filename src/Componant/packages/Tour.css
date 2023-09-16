@@ -8,7 +8,6 @@
   background: #237aff;
   width: 100px;
   position: absolute;
-  /* top: -0.1rem; */
   bottom: 60px;
 }
 
@@ -20,7 +19,6 @@
   position: relative;
   margin-top: 3rem;
   font-weight: 600;
-  /* border-top: 3px solid #237aff; */
 }
 
 .des {

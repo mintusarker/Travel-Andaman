@@ -13,7 +13,7 @@ const Info = ({ setShowModal }) => {
               </label>
               <input
                 type="text"
-                className="border-none focus:outline-none w-full p-3"
+                className="border-none focus:outline-none w-full p-2 shadow-md"
                 placeholder="Name"
                 name="name"
                 required=""
@@ -25,7 +25,7 @@ const Info = ({ setShowModal }) => {
                 No. of Person
               </label>
               <input
-                className="border-none focus:outline-none w-full p-3"
+                className="border-none focus:outline-none w-full p-2 shadow-md"
                 type="text"
                 placeholder="Adult + Child"
                 name="NOP"
@@ -37,7 +37,7 @@ const Info = ({ setShowModal }) => {
                 Phone Number
               </label>
               <input
-                className="border-none focus:outline-none w-full p-3"
+                className="border-none focus:outline-none w-full p-2 shadow-md"
                 type="number"
                 placeholder="Phone"
                 name="phone"
@@ -49,7 +49,7 @@ const Info = ({ setShowModal }) => {
                 Date for Trip
               </label>
               <input
-                className="border-none focus:outline-none w-full p-3"
+                className="border-none focus:outline-none w-full p-2 shadow-md"
                 type="date"
                 placeholder="Name"
                 name="date"
@@ -61,7 +61,7 @@ const Info = ({ setShowModal }) => {
                 Package type
               </label>
               <select
-                className="border-none focus:outline-none w-full p-3"
+                className="border-none focus:outline-none w-full p-2 shadow-md"
                 id=""
                 name="TOP"
               >
@@ -75,7 +75,10 @@ const Info = ({ setShowModal }) => {
               <label className="block text-base uppercase mb-3" for="">
                 Number Of Days
               </label>
-              <select className="border-none focus:outline-none p-3 w-full" name="NOD">
+              <select
+                className="border-none focus:outline-none p-2 w-full shadow-md"
+                name="NOD"
+              >
                 <option value="No Decided">No Decided</option>
                 <option value="03 Night - 04 Days">03 Night - 04 Days</option>
                 <option value="04 Night - 05 Days">04 Night - 05 Days</option>
@@ -88,7 +91,7 @@ const Info = ({ setShowModal }) => {
 
           <div>
             <textarea
-              className="border border-none focus:outline-none p-3 my-7 w-full"
+              className="border border-none focus:outline-none px-4 my-5 w-full shadow-md"
               id=""
               cols="30"
               rows="4"
@@ -99,7 +102,7 @@ const Info = ({ setShowModal }) => {
 
           <div className="">
             <button
-              className="btn btn-primary mb-7 w-full"
+              className="btn btn-primary mb-2 w-full"
               name="contact_email"
             >
               Send Enquiry
@@ -108,7 +111,7 @@ const Info = ({ setShowModal }) => {
         </form>
         <button
           onClick={() => setShowModal(false)}
-          className="w-10 h-7 pb-2 flex justify-center items-center bg-[#777] rounded-sm text-white font-semibold absolute top-[6rem] right-[3rem] text-3xl"
+          className="w-10 h-7 pb-2 flex justify-center items-center bg-[#777] rounded-sm text-white font-semibold absolute top-[6rem] right-[2.8rem] text-3xl"
         >
           &times;
         </button>

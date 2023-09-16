@@ -13,11 +13,9 @@ import ScrollToTop from "react-scroll-to-top";
 const Footer = () => {
   return (
     <footer>
-
       {/* scroll */}
       <ScrollToTop
         smooth
-        
         top="1000"
         color="white"
         AiOutlineArrowUp
@@ -82,7 +80,7 @@ const Footer = () => {
             </p>
             <div className="">
               <Link
-                to="Home"
+                to="home"
                 smooth={true}
                 offset={-90}
                 duration={500}

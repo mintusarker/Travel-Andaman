@@ -9,7 +9,7 @@ import "./Beach.css";
 
 const Beach = () => {
   return (
-    <div name='Beaches' className="inner-line">
+    <div name="Beaches" className="inner-line">
       <h2 className="title-beach">Beaches In Andaman</h2>
       <p className="des-beach">Most Beautiful Beaches In Andaman</p>
       <div>

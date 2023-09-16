@@ -18,16 +18,13 @@ footer::before {
   background-position: center bottom;
 }
 
-
-a:hover{
-    color: #237aff;
+a:hover {
+  color: #237aff;
 }
 
-
-Link:hover{
-    color: #237aff;
+Link:hover {
+  color: #237aff;
 }
-
 
 .upArrowBtn {
   padding: 9px 1rem;

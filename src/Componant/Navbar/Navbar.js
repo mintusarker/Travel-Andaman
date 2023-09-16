@@ -14,29 +14,6 @@ const Navbar = () => {
     setShowModal(true);
   };
 
-  const links = [
-    {
-      id: 1,
-      link: "home",
-    },
-    {
-      id: 2,
-      link: "Package",
-    },
-    {
-      id: 3,
-      link: "Beaches",
-    },
-    {
-      id: 4,
-      link: "Activities",
-    },
-    {
-      id: 5,
-      link: "contact",
-    },
-  ];
-
   return (
     <div>
       <div className="nav-nav w-full text-white">
@@ -116,24 +93,9 @@ const Navbar = () => {
                 contact
               </Link>
             </li>
-
-            {/* {links.map(({ id, link }) => (
-              <li key={id} className="btn-btn">
-                <Link
-                  to={link}
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  offset={50}
-                  className="transition-all duration-300"
-                >
-                  {link}
-                </Link>
-              </li>
-            ))} */}
           </ul>
         </div>
+
         <div
           onClick={() => setNav(!nav)}
           className="md:hidden lg:hidden cursor-pointer pr-4 z-10 text-white"
@@ -141,25 +103,82 @@ const Navbar = () => {
           {nav ? (
             <FaTimes className="bg-white text-[#237aff] p-1 w-12 h-9 rounded-md hover:text-white hover:bg-[#237aff] hover:border-[7px] hover:w-14 hover:h-12 hover:rounded-md hover:border-white" />
           ) : (
-            <FaBars
-              // size={30}
-              className="border-2 rounded-md w-11 h-10 p-2 text-white hover:text-[#237aff] hover:bg-white hover:border-none"
-            />
+            <FaBars className="border-2 rounded-md w-11 h-10 p-2 text-white hover:text-[#237aff] hover:bg-white hover:border-none" />
           )}
         </div>
 
         {nav && (
-          <ul className="bg-sm-color flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen  ">
-            {links.map(({ id, link }) => (
-              <li
-                key={id}
-                className="px-8 py-2 cursor-pointer capitalize text-2xl hover:bg-white hover:text-blue-600"
+          <ul className="bg-link-color flex flex-col gap-5 justify-center items-center absolute top-0 left-0 w-full h-screen  ">
+            <li className="px-8 py-2 cursor-pointer capitalize text-2xl hover:bg-white hover:text-blue-600">
+              <Link
+                onClick={() => showModalHandle()}
+                to="home"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={50}
+                className="transition-all duration-300 "
               >
-                <Link to={link} smooth duration={400}>
-                  {link}
-                </Link>
-              </li>
-            ))}
+                Home
+              </Link>
+            </li>
+
+            <li className="px-8 py-2 cursor-pointer capitalize text-2xl hover:bg-white hover:text-blue-600">
+              <Link
+                to="Package"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={50}
+                className="transition-all duration-300"
+              >
+                Package
+              </Link>
+            </li>
+
+            <li className="px-8 py-2 cursor-pointer capitalize text-2xl hover:bg-white hover:text-blue-600">
+              <Link
+                to="Beaches"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={50}
+                className="transition-all duration-300"
+              >
+                Beaches
+              </Link>
+            </li>
+
+            <li className="px-8 py-2 cursor-pointer capitalize text-2xl hover:bg-white hover:text-blue-600">
+              <Link
+                to="Activities"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={50}
+                className="transition-all duration-300"
+              >
+                Activities
+              </Link>
+            </li>
+
+            <li className="px-8 py-2 cursor-pointer capitalize text-2xl hover:bg-white hover:text-blue-600">
+              <Link
+                to="contact"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={50}
+                className="transition-all duration-300"
+              >
+                contact
+              </Link>
+            </li>
           </ul>
         )}
       </div>
