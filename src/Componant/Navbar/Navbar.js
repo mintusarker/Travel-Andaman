@@ -47,7 +47,7 @@ const Navbar = () => {
                   spy={true}
                   smooth={true}
                   duration={500}
-                  offset={-80}
+                  offset={50}
                   className="transition-all duration-300"
                 >
                   {link}
@@ -58,9 +58,16 @@ const Navbar = () => {
         </div>
         <div
           onClick={() => setNav(!nav)}
-          className="md:hidden lg:hidden cursor-pointer pr-4 z-10 text-gray-500"
+          className="md:hidden lg:hidden cursor-pointer pr-4 z-10 text-white"
         >
-          {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+          {nav ? (
+            <FaTimes className="bg-white text-[#237aff] p-1 w-12 h-9 rounded-md hover:text-white hover:bg-[#237aff] hover:border-[7px] hover:w-14 hover:h-12 hover:rounded-md hover:border-white" />
+          ) : (
+            <FaBars
+              // size={30}
+              className="border-2 rounded-md w-11 h-10 p-2 text-white hover:text-[#237aff] hover:bg-white hover:border-none"
+            />
+          )}
         </div>
 
         {nav && (
@@ -78,7 +85,6 @@ const Navbar = () => {
           </ul>
         )}
       </div>
-
     </div>
   );
 };

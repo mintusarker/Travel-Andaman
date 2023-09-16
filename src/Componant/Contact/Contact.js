@@ -3,17 +3,16 @@ import family from "../../assets/image/family.png";
 import "./Contact.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdWhatsapp, MdOutlineMail, MdLocationOn } from "react-icons/md";
-// import { MdOutlineMail} from "react-icons/md";
 
 const Contact = () => {
   return (
-    <section>
+    <section name='contact' id="contact">
       <div className="inner">
         <div className="">
           <p className="title">Contact</p>
           <p className="des">Get in touch with us</p>
         </div>
-        <div className="grid lg:grid-cols-2 w-full justify-center items-center mx-auto px-12 sm:px-32 md:px-32 lg:px-16">
+        <div className="flex flex-wrap w-full justify-center items-center mx-auto px-12 sm:px-32 md:px-32 lg:px-60">
           <div>
             <img className="max-w-[320px] m-12" src={family} alt="" />
           </div>
@@ -130,7 +129,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-20 my-28 mx-auto justify-center items-center">
+        <div className="flex flex-wrap gap-20 my-28 mx-auto justify-center items-center px-12 sm:px-32 md:px-32">
           <div className="px-3">
             <table >
               <tbody>
@@ -182,7 +181,7 @@ const Contact = () => {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.644345517758!2d92.7120363737891!3d11.719583041092111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3088bf09dbb073c3%3A0xa3cc61f2515f5d94!2sALNIYMA%20ENTERPRISES!5e0!3m2!1sen!2sin!4v1686141011252!5m2!1sen!2sin"
               width="550"
               height="350"
-              className="rounded-md p-1 shadow-xl shadow-gray-400"
+              className="rounded-md p-1 shadow-xl shadow-gray-400 map-responsive"
               style={{ border: "0" , boxShadow: "9px 9px 1rem rgba(0, 0, 0, 0.3)"}}
               allowfullscreen=""
               loading="lazy"

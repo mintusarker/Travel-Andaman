@@ -7,13 +7,13 @@ import seakart from "../../assets/image/seakart.png";
 import seawalk from "../../assets/image/seawalk.png";
 import shorediving from "../../assets/image/shorediving.jpg";
 import snorkeling from "../../assets/image/snorkeling.png";
-import './Activities.css'
+import "./Activities.css";
 
 const Activities = () => {
   return (
-    <div className="inner">
-      <h2 className="title">Beaches In Andaman</h2>
-      <p className="des">Most Beautiful Beaches In Andaman</p>
+    <div name='Activities' className="inner-two">
+      <h2 className="title-activity">Activities In Andaman</h2>
+      <p className="des-activity">Top Activities To Do In Andaman</p>
       <div>
         <div className="cardbox">
           <div className="card">

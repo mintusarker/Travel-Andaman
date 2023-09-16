@@ -7,12 +7,25 @@ import { BiBook } from "react-icons/bi";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
 import { MdWhatsapp } from "react-icons/md";
+import { Link } from "react-scroll";
+import ScrollToTop from "react-scroll-to-top";
 
 const Footer = () => {
   return (
     <footer>
+      <ScrollToTop
+        smooth
+        top="1000"
+        color="white"
+        style={{
+          backgroundColor: "#237aff",
+          paddingLeft: "13px",
+          height: "40px",
+          width: "55px",
+        }}
+      />
       <div className="">
-        <section className="flex flex-wrap justify-around p-9">
+        <section className="flex flex-wrap justify-around p-8">
           <div className="text-center">
             <p
               style={{
@@ -63,36 +76,55 @@ const Footer = () => {
               Important Links
             </p>
             <div className="">
-              <a
-                href="index.html"
-                className="flex gap-3 justify-center items-center p-2 text-[17px] font-bold "
+              <Link
+                to="Home"
+                smooth={true}
+                offset={-90}
+                duration={500}
+                className="transition-all duration-300 flex gap-3 justify-center items-center p-2 text-[17px] font-bold cursor-pointer"
               >
                 <FaHome></FaHome> Home
-              </a>
-              <a
-                href="#beaches"
-                className="flex gap-3 justify-center items-center p-2 text-[17px] font-bold "
+              </Link>
+
+              <Link
+                to="Beaches"
+                smooth={true}
+                offset={70}
+                duration={500}
+                className="transition-all duration-300 flex gap-3 justify-center items-center p-2 text-[17px] font-bold cursor-pointer "
               >
                 <FaUmbrellaBeach></FaUmbrellaBeach> Beaches
-              </a>
-              <a
-                href="#packages"
-                className="flex gap-3 justify-center items-center p-2 text-[17px] font-bold "
+              </Link>
+
+              <Link
+                to="Package"
+                smooth={true}
+                offset={-90}
+                duration={500}
+                className="transition-all duration-300 flex gap-3 justify-center items-center p-2 text-[17px] font-bold cursor-pointer"
               >
                 <LiaSitemapSolid></LiaSitemapSolid> Packages
-              </a>
-              <a
-                href="#contact"
-                className="flex gap-3 justify-center items-center text-[17px] p-2 font-bold "
+              </Link>
+
+              <Link
+                to="contact"
+                smooth={true}
+                offset={-90}
+                duration={500}
+                className="transition-all duration-300 flex gap-3 justify-center items-center text-[17px] p-2 font-bold cursor-pointer"
               >
                 <HiOutlinePhone></HiOutlinePhone> Contact
-              </a>
-              <a
-                href="#aboutus"
-                className="flex gap-3 justify-center items-center text-[17px] p-2 font-bold "
+              </Link>
+
+              <Link
+                to="about"
+                smooth={true}
+                offset={90}
+                duration={500}
+                className="transition-all duration-300 flex gap-3 justify-center items-center text-[17px] p-2 font-bold cursor-pointer"
               >
                 <BiBook></BiBook> About Us
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -122,15 +154,15 @@ const Footer = () => {
         </section>
 
         <section
-          style={{ borderTop: "1px solid #ffffff2a", fontSize: "1rem" }}
-          className="flex px-6  pb-2 flex-wrap justify-between"
+          style={{ borderTop: "1px solid #ffffff2a", fontSize: "1.1rem" }}
+          className="flex px-6 pt-4 pb-7 flex-wrap justify-between"
         >
           <p>
             Copyright © 2018 - 22
             <a
               href="/index.html"
               className="px-1"
-              style={{ fontSize: "1rem" }}
+              style={{ fontSize: "1.1rem" }}
             >
               Andamanic Travelopedia.
             </a>
@@ -138,9 +170,7 @@ const Footer = () => {
           </p>
           <p>
             Design and Maintained by
-            <a href="https://www.nairrs.com">
-              NAIRRS Web &amp; Tech
-            </a>
+            <a href="https://www.nairrs.com">NAIRRS Web &amp; Tech</a>
           </p>
         </section>
       </div>

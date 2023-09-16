@@ -8,13 +8,14 @@ import img6 from "../../assets/image/radhanagar.webp";
 import { CiStar } from "react-icons/ci";
 import { BsCurrencyRupee } from "react-icons/bs";
 import "./Tour.css";
+import { AiFillStar } from "react-icons/ai";
 
 const Tour = () => {
   return (
-    <div className="">
+    <div name='Package' className="">
       <h2 className="title">Tour Packages</h2>
       <p className="des">Most Selling Tour Packages In Andaman</p>
-      
+
       <div className="card_package1 lg:px-52 md:px-32">
         <div className="cards">
           <div className="rounded-xl shadow-xl border relative">
@@ -32,12 +33,34 @@ const Tour = () => {
             </div>
 
             <div className="flex justify-between items-center p-6">
-              <div className="flex">
-                <CiStar />
-                <CiStar />
-                <CiStar />
-                <CiStar />
-                <CiStar />
+              <div className="">
+                <div className="rating flex gap-1">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-gray-300"
+                  />
+                </div>
               </div>
 
               <div>
@@ -62,13 +85,33 @@ const Tour = () => {
             </div>
 
             <div className="flex justify-between items-center p-6">
-              <div className="flex">
-                <CiStar />
-                <CiStar />
-                <CiStar />
-                <CiStar />
-                <CiStar />
-              </div>
+            <div className="rating flex gap-1">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-gray-300"
+                  />
+                </div>
 
               <div>
                 <p>04 Review</p>
@@ -92,13 +135,33 @@ const Tour = () => {
             </div>
 
             <div className="flex justify-between items-center p-6">
-              <div className="flex">
-                <CiStar />
-                <CiStar />
-                <CiStar />
-                <CiStar />
-                <CiStar />
-              </div>
+            <div className="rating flex gap-1">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-gray-300"
+                  />
+                </div>
 
               <div>
                 <p>04 Review</p>
@@ -122,13 +185,33 @@ const Tour = () => {
             </div>
 
             <div className="flex justify-between items-center p-6">
-              <div className="flex">
-                <CiStar />
-                <CiStar />
-                <CiStar />
-                <CiStar />
-                <CiStar />
-              </div>
+            <div className="rating flex gap-1">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-gray-300"
+                  />
+                </div>
 
               <div>
                 <p>04 Review</p>
@@ -152,13 +235,33 @@ const Tour = () => {
             </div>
 
             <div className="flex justify-between items-center p-6">
-              <div className="flex">
-                <CiStar />
-                <CiStar />
-                <CiStar />
-                <CiStar />
-                <CiStar />
-              </div>
+            <div className="rating flex gap-1">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-gray-300"
+                  />
+                </div>
 
               <div>
                 <p>04 Review</p>
@@ -182,13 +285,33 @@ const Tour = () => {
             </div>
 
             <div className="flex justify-between items-center p-6">
-              <div className="flex">
-                <CiStar />
-                <CiStar />
-                <CiStar />
-                <CiStar />
-                <CiStar />
-              </div>
+            <div className="rating flex gap-1">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-[#237aff]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    className="mask mask-star-2 bg-gray-300"
+                  />
+                </div>
 
               <div>
                 <p>04 Review</p>

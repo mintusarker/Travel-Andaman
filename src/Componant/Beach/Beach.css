@@ -1,7 +1,41 @@
-.inner {
+.inner-line {
   max-width: 1100px;
   margin: auto;
   padding-top: 80px;
+  margin-top: 20px;
+}
+
+
+.title-beach::before{
+  content: '';
+  height: 4px;
+  background: #237aff;
+  width: 100px;
+  position: absolute;
+  /* top: -0.1rem; */
+  bottom: 60px;
+}
+
+
+.title-beach{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 7rem;
+  color: #222;
+  position: relative;
+  margin-top: 3rem;
+  font-weight: 600;
+  /* border-top: 3px solid #237aff; */
+ 
+}
+
+.des-beach{
+  text-align: center;
+  font-size: 1.5rem;
+  margin: -7rem 0 7rem;
+  color: #555;
+  font-style: italic;
+  font-weight: 600;
 }
 
 .cardbox {

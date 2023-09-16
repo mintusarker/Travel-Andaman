@@ -9,9 +9,9 @@ import "./Beach.css";
 
 const Beach = () => {
   return (
-    <div className="inner">
-      <h2 className="title">Beaches In Andaman</h2>
-      <p className="des">Most Beautiful Beaches In Andaman</p>
+    <div name='Beaches' className="inner-line">
+      <h2 className="title-beach">Beaches In Andaman</h2>
+      <p className="des-beach">Most Beautiful Beaches In Andaman</p>
       <div>
         <div className="cardbox">
           <div className="card">

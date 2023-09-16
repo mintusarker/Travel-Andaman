@@ -11,7 +11,7 @@ section {
   display: block;
 }
 
-.inner {
+.inner-travel {
   max-width: 1100px;
   margin: auto;
 }
@@ -53,12 +53,33 @@ img {
     margin-bottom: 2rem;
 }
 
-p {
+.para {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+.title-travel::before {
+  content: "";
+  height: 4px;
+  background: #237aff;
+  width: 100px;
+  position: absolute;
+  /* top: -0.1rem; */
+  bottom: 60px;
+}
+
+.title-travel {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 7rem;
+  color: #222;
+  position: relative;
+  margin-top: 3rem;
+  font-weight: 600;
+  /* border-top: 3px solid #237aff; */
 }
 
 @media screen and (max-width: 1100px) {

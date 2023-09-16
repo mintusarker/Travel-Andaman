@@ -1,19 +1,36 @@
 import React from "react";
-import './Header.css';
+
+import video from "../../assets/video/video1.mp4";
+import "./Header.css";
 
 const Header = () => {
   return (
-    <section className="my-12">
-      <video className="video" autoPlay loop muted>
-        <source src="https://www.andamanictravelopedia.com/video/video1.mp4" />
-      </video>
+    <div name='home' id="up" className="landingpage">
+      <video src={video} autoPlay muted loop class="video-bg" />
+      <div className="bg-overlay"></div>
 
-      {/* <div className="text-center">
-      <h2>Explore The Beauty Of Andaman With Andamanic TraveloPedia.</h2>
-      <button>Expolre More</button>
-      </div> */}
-    </section>
+      <div className="inners-head">
+        <p className="head-title">
+          Explore the beauty of andaman with
+          <span
+            style={{
+              color: "#237aff",
+              background: "#fff",
+              fontStyle: "italic",
+            }}
+          >
+            &nbsp;&nbsp;Andamanic&nbsp;&nbsp; TraveloPedia.&nbsp;
+          </span>
+        </p>
+        <div className="btns">
+          <a href="#" className="btn1">
+            Explore
+          </a>
+        </div>
+      </div>
+
+    </div>
   );
 };
- 
+
 export default Header;

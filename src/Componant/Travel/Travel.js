@@ -4,17 +4,17 @@ import "./Travel.css";
 
 const Travel = () => {
   return (
-    <section className="mainbox aboutus">
-      <div className="inner">
+    <section name='about' className="mainbox aboutus">
+      <div className="inner-travel">
         <div className="mainboxbody">
           <div className="aboutusing">
             <img src={mbanner} alt="" />
           </div>
           <div className="aboutusdiv">
-            <p className="aboutnamettl">
+            <p className="aboutnamettl para title">
               Andamanic <span>Travelopedia</span>
             </p>
-            <p>
+            <p className="para">
               Based in the pristine Islands, Andamanic Travelopedia is a travel
               agency committed to providing our clients with exceptional
               professional services, a complete end to end booking solution
