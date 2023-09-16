@@ -1,0 +1,14 @@
+.modal-info {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  background: linear-gradient(-45deg, #237aff, transparent);
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 40px;
+  padding-top: 105px;
+}

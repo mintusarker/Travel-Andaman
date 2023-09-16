@@ -4,7 +4,7 @@ import { FaFacebookF, FaHome, FaUmbrellaBeach } from "react-icons/fa";
 import { LiaSitemapSolid } from "react-icons/lia";
 import { HiOutlinePhone } from "react-icons/hi";
 import { BiBook } from "react-icons/bi";
-import { AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineArrowUp, AiOutlineInstagram } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
 import { MdWhatsapp } from "react-icons/md";
 import { Link } from "react-scroll";
@@ -13,10 +13,14 @@ import ScrollToTop from "react-scroll-to-top";
 const Footer = () => {
   return (
     <footer>
+
+      {/* scroll */}
       <ScrollToTop
         smooth
+        
         top="1000"
         color="white"
+        AiOutlineArrowUp
         style={{
           backgroundColor: "#237aff",
           paddingLeft: "13px",
@@ -24,6 +28,7 @@ const Footer = () => {
           width: "55px",
         }}
       />
+
       <div className="">
         <section className="flex flex-wrap justify-around p-8">
           <div className="text-center">

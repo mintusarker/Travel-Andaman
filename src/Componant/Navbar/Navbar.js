@@ -3,9 +3,16 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import logo from "../../assets/image/logo (1).png";
 import "./Navbar.css";
+import Info from "../ModalQuery/Info";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+
+  const [showModal, setShowModal] = useState(false);
+
+  const showModalHandle = () => {
+    setShowModal(true);
+  };
 
   const links = [
     {
@@ -38,8 +45,79 @@ const Navbar = () => {
         </p>
 
         <div>
-          <ul className="hidden md:flex">
-            {links.map(({ id, link }) => (
+          <ul className="hidden md:flex items-center">
+            <li>
+              <Link
+                onClick={() => showModalHandle()}
+                to="home"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={50}
+                className="transition-all duration-300 btn-btn"
+              >
+                Home
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="Package"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={50}
+                className="transition-all duration-300 btn-btn"
+              >
+                Package
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="Beaches"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={50}
+                className="transition-all duration-300 btn-btn"
+              >
+                Beaches
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="Activities"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={50}
+                className="transition-all duration-300 btn-btn"
+              >
+                Activities
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="contact"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={50}
+                className="transition-all duration-300 btn-btn"
+              >
+                contact
+              </Link>
+            </li>
+
+            {/* {links.map(({ id, link }) => (
               <li key={id} className="btn-btn">
                 <Link
                   to={link}
@@ -53,7 +131,7 @@ const Navbar = () => {
                   {link}
                 </Link>
               </li>
-            ))}
+            ))} */}
           </ul>
         </div>
         <div
@@ -85,6 +163,9 @@ const Navbar = () => {
           </ul>
         )}
       </div>
+
+      {/* info modal */}
+      {showModal && <Info setShowModal={setShowModal}></Info>}
     </div>
   );
 };

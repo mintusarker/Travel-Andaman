@@ -25,7 +25,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    className="border border-black w-full p-3"
+                    className="border border-black focus:outline-none focus:border-sky-500  w-full p-3"
                     placeholder="Name"
                     name="name"
                     required=""
@@ -37,7 +37,7 @@ const Contact = () => {
                     No. of Person
                   </label>
                   <input
-                    className="border border-black w-full p-3"
+                    className="border border-black focus:outline-none focus:border-sky-500 w-full p-3"
                     type="text"
                     placeholder="Adult + Child"
                     name="NOP"
@@ -49,7 +49,7 @@ const Contact = () => {
                     Phone Number
                   </label>
                   <input
-                    className="border border-black w-full p-3"
+                    className="border border-black focus:outline-none focus:border-sky-500 w-full p-3"
                     type="number"
                     placeholder="Phone"
                     name="phone"
@@ -61,7 +61,7 @@ const Contact = () => {
                     Date for Trip
                   </label>
                   <input
-                    className="border border-black w-full p-3"
+                    className="border border-black focus:outline-none focus:border-sky-500 w-full p-3"
                     type="date"
                     placeholder="Name"
                     name="date"
@@ -73,7 +73,7 @@ const Contact = () => {
                     Package type
                   </label>
                   <select
-                    className="border border-black w-full p-3"
+                    className="border border-black focus:outline-none focus:border-sky-500 w-full p-3"
                     id=""
                     name="TOP"
                   >
@@ -87,7 +87,7 @@ const Contact = () => {
                   <label className="block text-base uppercase mb-3" for="">
                     Number Of Days
                   </label>
-                  <select className="border border-black p-3 w-full" name="NOD">
+                  <select className="border border-black focus:outline-none focus:border-sky-500 p-3 w-full" name="NOD">
                     <option value="No Decided">No Decided</option>
                     <option value="03 Night - 04 Days">
                       03 Night - 04 Days
@@ -108,7 +108,7 @@ const Contact = () => {
 
               <div>
                 <textarea
-                  className="border border-black p-3 my-7 w-full"
+                  className="border border-black focus:outline-none focus:border-sky-500 p-3 my-7 w-full"
                   id=""
                   cols="30"
                   rows="4"
